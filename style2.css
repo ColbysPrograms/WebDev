@@ -28,7 +28,8 @@
     /* align-items: ; */
 }
 .body .links a{
-    padding: 20px;
+    margin: 20px 50px;
+    /* padding: 20px; */
 }
 .body .text{
     flex: 80;
