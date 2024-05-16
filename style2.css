@@ -33,4 +33,5 @@
 }
 .body .text{
     flex: 80;
+    opacity: 0;
 }
