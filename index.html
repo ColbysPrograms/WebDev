@@ -4,43 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colby Cox's Portfolio</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="index.js"></script> 
 </head>
 <body>
     <section class="header">
-        <h1>Colby Cox</h1>
-        <p>Junior Software Developer</p>
+        <h1 onclick="textRemove()">Colby Cox</h1>
+        <p onclick="textRemove()">Junior Software Developer</p>
     </section>
     <section class="body">
         <div class="links">
-            <a href="" onclick="showText('objective')">Objective</a>
-            <a href="">Resume</a>
-            <a href="">Projects</a>
-            <a href="">About Me</a>
-            <a href="">Contact</a>
+            <p href="" onclick="textChange('objective')">Objective</p>
+            <p href="" onclick="textChange('resume')">Resume</p>
+            <p href="" onclick="textChange('projects')">Projects</p>
+            <p href="" onclick="textChange('about')">About Me</p>
+            <p href="" onclick="textChange('contact')">Contact</p>
         </div>
-        <div class="text" id="text">
-            <div id="objective">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, amet aspernatur officiis quasi ipsam laudantium beatae aliquam quisquam tenetur commodi suscipit autem nihil facilis rerum? Est, itaque. Odit, ullam nihil!</p>
-            </div>
-            <div id="resume">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sequi doloremque excepturi illum, sed nam aliquid totam qui sunt praesentium quidem molestiae. Aut aperiam repellat ad quam tempore incidunt enim.</p>
-            </div>
-            <div id="projects">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sequi doloremque excepturi illum, sed nam aliquid totam qui sunt praesentium quidem molestiae. Aut aperiam repellat ad quam tempore incidunt enim.</p>
-            </div>
-            <div id="about">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque minus explicabo illo aspernatur cum eveniet vitae possimus animi reiciendis asperiores. Sit nam quasi incidunt, quisquam deserunt omnis sunt commodi.</p>
-            </div>
-            <div id="contact">
-                <p>contact</p>
-            </div>
+        <div id="text">
+            
         </div>
     </section>
+    <section class="content">
+        <div id="objective">
+            <p>To acquire an entry-level software engineer/data scientist position where I can further develop and utilize the skills I have learned. Seeking an opportunity to obtain hands-on experience within a reputable company.</p>
+        </div>
+        <div id="resume">
+            <!-- <object data="Resume.pdf" type="application/pdf" width: "800" height: "500"></object> -->
+            <embed src="Resume.pdf" type="application/pdf" style="width: 80%; height: 75vh;">
+        </div>
+        <div id="projects">
+            <p>projects</p>
+        </div>
+        <div id="about">
+            <p>Other places you can find me:</p>
+            <ul>
+                <li><a href="https://github.com/WilliamColbyCox" target="_blank">Github</a></li>
+            </ul>
+            <img src="me.jpg" alt="">
+        </div>
+        <div id="contact">
+            <p>Contact me at:</p>
+            <ul>
+                <li><a href="tel:+18709985066" target="_blank">Phone: +1(870)998-5066</a></li>
+                <li><a href="mailto:colby.cox2020@gmail.com" target="_blank">Email: colby.cox2020@gmail.com</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer">
+        <ul>
+            <li><a href="https://github.com/WilliamColbyCox" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+        <p>Made by Colby Cox</p>
+    </section>
+    <script src="index.js"></script> 
 </body>
 </html>

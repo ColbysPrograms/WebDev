@@ -8,6 +8,8 @@
 .header{
     text-align: center;
     padding: 10px 0 10px;
+    cursor: pointer;
+    background-color: #1E88E5;
 }
 .header h1{
     font-weight: 600;
@@ -17,7 +19,8 @@
     font-size: 20px;
 }
 .body{
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
     display: flex;
 }
 .body .links{
@@ -27,11 +30,23 @@
     text-align: center;
     /* align-items: ; */
 }
-.body .links a{
+.body .links p{
     margin: 20px 50px;
+    cursor: pointer;
     /* padding: 20px; */
 }
-.body .text{
+.body #text{
     flex: 80;
-    opacity: 0;
+    visibility: hidden;
+}
+.content{
+    display: none;
+}
+.footer{
+    text-align: center;
+    padding: 10px 0 10px;
+    background-color: #1E88E5;
+}
+.footer i{
+    color: #000000;
 }
